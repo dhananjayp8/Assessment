@@ -3,6 +3,7 @@
   justify-content: space-between;
   margin-left: 1rem;
   margin-right: 1rem;
+  padding: 1rem;
 }
 .nav ul {
   width: 50%;
@@ -20,4 +21,120 @@ ul > li {
   background-color: aliceblue;
   padding: 10px;
   border-radius: 8px;
+}
+.links button {
+  border-radius: 8px;
+  padding: 0 4px;
+  border: 1px solid black;
+}
+.about-section {
+  padding: 50px 20px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-text {
+  flex: 1;
+  max-width: 600px;
+  text-align: left;
+}
+
+.about-text h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.about-text p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.about-text span {
+  font-weight: bold;
+  color: #0056b3;
+}
+
+.about-text .highlight {
+  font-size: 18px;
+  font-weight: bold;
+  color: #004085;
+}
+
+.about-image {
+  flex: 1;
+  max-width: 400px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.mission {
+  width: 80%;
+}
+.mission h1 {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 500;
+}
+.row-mission {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 1rem auto;
+}
+.vision {
+  width: 100%;
+  margin-left: 4rem;
+  display: flex;
+}
+.vision p {
+  border: 1px solid black;
+}
+.mission-card {
+  border: 1px solid black;
+}
+.vision-card {
+  border: 1px solid black;
+  margin-left: 4rem;
+}
+.mission-card-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin-left: 1.5rem;
+  margin-right: 1rem;
+}
+.mission-item.img {
+  width: 200px;
+  height: 200px;
+}
+
+@media (min-width: 768px) {
+  .about-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .about-text {
+    text-align: left;
+  }
+
+  .about-image {
+    margin-top: 0;
+  }
 }
