@@ -25,7 +25,7 @@ const App = () => {
       <Accordion />
       <Process />
       <Industries />
-
+      <Mission />
       <Services />
       <KnowMore />
       <Footer />

@@ -1,6 +1,11 @@
 import React from "react";
+import { useRef, useEffect } from "react";
+import Typed from "typed.js";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Mission = () => {
+  const typedRef = useRef(null);
   const missionList = [
     {
       id: 1,
@@ -33,38 +38,48 @@ const Mission = () => {
       title: "Continous Improvent",
     },
   ];
+  useEffect(() => {
+    // Initialize AOS
+    AOS.init({ duration: 1000 });
+
+    // Initialize Typed.js
+    const typed = new Typed(typedRef.current, {
+      strings: ["Empowering Businesses", "Driving Digital Transformation"],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true,
+      backDelay: 1500,
+      startDelay: 500,
+    });
+
+    return () => typed.destroy(); // Cleanup on unmount
+  }, []);
   return (
     <>
-      <div className="mission">
-        <h1>Mission and Vision</h1>
+      <div className="mission" data-aos="fade-left">
+        <h1>Mission</h1>
         <div className="row-mission">
           <div className="mission-card">
-            <h5 className="card-title">Our Mission</h5>
+            <h5 className="card-title" style={{ fontSize: "1rem" }}>
+              Our Mission
+            </h5>
             <p className="card-text">
-              Our mission is to empower businesses through innovative, reliable,
-              and secure IT solutions that enhance operational efficiency and
-              drive digital transformation.
-            </p>
-          </div>
-          <div className="vision-card">
-            <h5 className="card-title">Our Vision</h5>
-            <p className="card-text">
-              Our mission is to empower businesses through innovative, reliable,
-              and secure IT solutions that enhance operational efficiency and
-              drive digital transformation.
+              <span ref={typedRef}></span>
             </p>
           </div>
         </div>
-      </div>
-      <div className="mission-card-img">
-        {missionList.map((item, key) => (
-          <div className="card" style={{ width: "18rem" }} key={item.id}>
-            <img src={item.img} className="card-img-top" alt="Card image" />
-            <div className="card-body">
-              <h5 className="card-title">{item.title}</h5>
+
+        {/* Mission Cards */}
+        <div className="mission-card-img" data-aos="fade-left">
+          {missionList.map((item) => (
+            <div className="card" style={{ width: "18rem" }} key={item.id}>
+              <img src={item.img} className="card-img-top" alt="Card image" />
+              <div className="card-body">
+                <h5 className="card-title">{item.title}</h5>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </>
   );

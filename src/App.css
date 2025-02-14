@@ -169,6 +169,11 @@ ul > li:hover {
   font-size: 4rem;
   font-weight: 500;
 }
+.card-title {
+  font-size: 1.2em; /* Our Mission */
+  font-weight: bold;
+}
+
 .row-mission {
   display: flex;
   justify-content: space-around;
@@ -183,13 +188,12 @@ ul > li:hover {
 .vision p {
   border: 1px solid black;
 }
-.mission-card {
-  border: 1px solid black;
-}
+
 .vision-card {
   border: 1px solid black;
   margin-left: 4rem;
 }
+
 .mission-card-img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -315,6 +319,9 @@ ul > li:hover {
 /* animation: "moveToFro 2s infinite ease-in-out alternate", */
 .step {
   animation: moveToFro 2s infinite ease-in-out alternate;
+}
+.footer-card {
+  background-color: #fb8f2f;
 }
 @keyframes moveToFro {
   0% {

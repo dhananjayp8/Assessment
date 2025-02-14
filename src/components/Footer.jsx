@@ -62,7 +62,7 @@ const Footer = () => {
       <div style={footerContainerStyle}>
         {/* Left Section - Cards */}
         <div style={leftFooterStyle}>
-          <div style={footCardStyle}>
+          <div style={footCardStyle} className="footer-card">
             <VscSymbolProperty style={iconStyle} />
             <div>
               <h1 style={textStyle}>OPERATIONAL EFFICIENCY</h1>
@@ -72,7 +72,7 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div style={footCardStyle}>
+          <div style={footCardStyle} className="footer-card">
             <MdSecurity style={iconStyle} />
             <div>
               <h1 style={textStyle}>SECURITY & COMPLIANCE</h1>
@@ -82,7 +82,7 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div style={footCardStyle}>
+          <div style={footCardStyle} className="footer-card">
             <SiAlwaysdata style={iconStyle} />
             <div>
               <h1 style={textStyle}>DATA ANALYTICS</h1>
@@ -91,7 +91,7 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div style={footCardStyle}>
+          <div style={footCardStyle} className="footer-card">
             <MdOutlineInsights style={iconStyle} />
             <div>
               <h1 style={textStyle}>BUSINESS INTELLIGENCE</h1>
@@ -104,7 +104,7 @@ const Footer = () => {
         {/* SALES@PHRONESISTECH.IO */}
         {/*  CRM@PHRONESISTECH.IO*/}
         {/* Right Section - Links */}
-        <div style={rightFooterStyle}>
+        <div style={rightFooterStyle} className="footer-card">
           <h1>CONTACT US</h1>
           <div style={linkContainerStyle}>
             <a

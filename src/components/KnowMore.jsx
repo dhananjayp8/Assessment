@@ -19,8 +19,8 @@ const KnowMore = () => {
             <div className="chip">CREDIBILITY</div>
             <div className="chip">COMPETENCE</div>
             <div className="chip">COMMITMENT</div>
-            <div className="chip">CUSTOMER CENTRICITY</div>
-            <div className="chip">CONTINUOUS IMPROVEMENT</div>
+            <div className="chip chip1">CUSTOMER CENTRICITY</div>
+            <div className="chip chip1">CONTINUOUS IMPROVEMENT</div>
           </div>
           <div className="about-content">
             <div className="left-about">
@@ -30,20 +30,39 @@ const KnowMore = () => {
             </div>
             <div className="right-about">
               <p>
-                PhronesisTech is a dynamic IT solutions and consulting company,
-                founded in 2022, specializing in project and product management
-                services.
+                <span
+                  style={{
+                    fontSize: "1.5rem",
+                    color: "#0BBF53",
+                    fontWeight: 700,
+                  }}
+                >
+                  PhronesisTech
+                </span>{" "}
+                is a dynamic IT solutions and consulting company,{" "}
+                <span>founded in 2022</span>, specializing in project and
+                product management services.
               </p>
               <p>
-                With a strong presence in both Boston (USA) and Bangalore
-                (India), we bring a global perspective to every project,
-                ensuring excellence in delivery across borders.
+                With a strong presence in both{" "}
+                <span style={{ color: "#3674b5", fontSize: "1.2rem" }}>
+                  Boston (USA)
+                </span>{" "}
+                and{" "}
+                <span style={{ color: "#3674b5", fontSize: "1.2rem" }}>
+                  Bangalore (India)
+                </span>
+                , we bring a global perspective to every project, ensuring
+                excellence in delivery across borders.
               </p>
               <p>
-                As a service-driven firm focused on business transformation and
-                technology services, we leverage cutting-edge technology to
-                unlock human potential and create meaningful impact for our
-                customers.
+                As a{" "}
+                <span style={{ color: "#3674b5", fontSize: "1.2rem" }}>
+                  service-driven firm
+                </span>{" "}
+                focused on business transformation and technology services, we
+                leverage cutting-edge technology to unlock human potential and
+                create meaningful impact for our customers.
               </p>
               <p>
                 Leading change demands courage, innovation, focus, and
