@@ -30,7 +30,7 @@ const Vision = () => {
     // Initialize Typed.js
     const typed = new Typed(typedRef.current, {
       strings: [
-        "is to be the leading provider of exceptional service solutions, recognized for our commitment to excellence,innovation and customer satisfaction",
+        "To be the leading provider of exceptional service solutions, recognized for our commitment to excellence,innovation and customer satisfaction",
       ],
       typeSpeed: 50,
       backSpeed: 30,
@@ -47,22 +47,30 @@ const Vision = () => {
         <h1>Vision</h1>
         <div className="row-mission">
           <div className="mission-card">
-            <h5 className="card-title" style={{ fontSize: "1rem" }}>
+            <h5 className="card-title" style={{ fontSize: "1.6rem" }}>
               Our Vision
             </h5>
-            <p className="card-text">
+            <p className="card-text" style={{ fontSize: "1.2rem" }}>
               <span ref={typedRef}></span>
             </p>
           </div>
         </div>
 
         {/* Mission Cards */}
-        <div className="mission-card-img" data-aos="fade-left">
+        <div
+          className="mission-card-img"
+          data-aos="fade-left"
+          style={{ display: "flex", flexWrap: "wrap", marginLeft: "10rem" }}
+        >
           {missionList.map((item) => (
-            <div className="card" style={{ width: "18rem" }} key={item.id}>
-              <img src={item.img} className="card-img-top" alt="Card image" />
-              <div className="card-body">
-                <h5 className="card-title">{item.title}</h5>
+            <div className="card" key={item.id} style={{ cursor: "pointer" }}>
+              <div className="card-image-container">
+                <img src={item.img} className="card-img-top" alt="Card image" />
+                <div className="card-overlay">
+                  <h5 className="card-title" style={{ color: "white" }}>
+                    {item.title}
+                  </h5>
+                </div>
               </div>
             </div>
           ))}

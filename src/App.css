@@ -37,7 +37,7 @@ ul > li:hover {
 }
 
 .logo > img {
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
   padding: 10px;
   border-radius: 8px;
 }
@@ -277,6 +277,7 @@ ul > li:hover {
   font-size: 0.7rem;
   font-weight: 800;
   border-radius: 10px;
+  cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 .chip:hover {

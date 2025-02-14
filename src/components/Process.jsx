@@ -40,7 +40,13 @@ const Process = () => {
       style={{
         textAlign: "center",
         padding: "40px 20px",
-        backgroundColor: "lightgrey",
+        padding: "40px 20px",
+        // backgroundImage:
+        //   "url('../assets/')", // Replace with your image URL
+        // backgroundSize: "cover",
+        // backgroundPosition: "center",
+        // backgroundRepeat: "no-repeat",
+        color: "white",
       }}
     >
       <h1 style={{ fontSize: "2rem", fontWeight: "700" }}>PROCESS WE FOLLOW</h1>

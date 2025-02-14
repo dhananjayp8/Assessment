@@ -30,7 +30,7 @@ const Mission = () => {
     // Initialize Typed.js
     const typed = new Typed(typedRef.current, {
       strings: [
-        "is to empower businesses through innovative, reliable, and secure IT solutions that enhance operational efficiency and drive digital transformation.",
+        "To empower businesses through innovative, reliable, and secure IT solutions that enhance operational efficiency and drive digital transformation.",
       ],
       typeSpeed: 50,
       backSpeed: 30,
@@ -47,10 +47,10 @@ const Mission = () => {
         <h1>Mission</h1>
         <div className="row-mission">
           <div className="mission-card">
-            <h5 className="card-title" style={{ fontSize: "1rem" }}>
-              Our Mission
+            <h5 className="card-title" style={{ fontSize: "1.5rem" }}>
+              Our Mission :-
             </h5>
-            <p className="card-text">
+            <p className="card-text" style={{ fontSize: "1.2rem" }}>
               <span ref={typedRef}></span>
             </p>
           </div>
