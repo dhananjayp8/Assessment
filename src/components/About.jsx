@@ -5,7 +5,7 @@ import AOS from "aos";
 import { useRef, useEffect } from "react";
 import "aos/dist/aos.css";
 
-const About = () => {
+const About = ({ scrollToKnowMore }) => {
   const typedRef = useRef(null);
 
   useEffect(() => {
@@ -47,7 +47,7 @@ const About = () => {
               PhronesisTech
             </span>
           </p>
-          <button>Know More</button>
+          <button onClick={scrollToKnowMore}>Know More</button>
         </div>
 
         {/* About Image - Animate from Right */}

@@ -13,6 +13,7 @@ const KnowMore = () => {
             fontSize: "2rem",
             fontWeight: "800",
             marginBottom: "1rem",
+            color: "#3674b5",
           }}
         >
           OUR VALUES
@@ -22,8 +23,8 @@ const KnowMore = () => {
             <div className="chip">CREDIBILITY</div>
             <div className="chip">COMPETENCE</div>
             <div className="chip">COMMITMENT</div>
-            <div className="chip chip1">CUSTOMER CENTRICITY</div>
-            <div className="chip chip1">CONTINUOUS IMPROVEMENT</div>
+            <div className="chip">CUSTOMER CENTRICITY</div>
+            <div className="chip">CONTINUOUS IMPROVEMENT</div>
           </div>
           <div className="about-content">
             <div className="left-about">

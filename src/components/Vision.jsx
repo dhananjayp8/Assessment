@@ -44,13 +44,21 @@ const Vision = () => {
   return (
     <>
       <div className="mission" data-aos="fade-left">
-        <h1>Vision</h1>
+        <h1 style={{ marginLeft: "6rem", fontWeight: "800", color: "#3674b5" }}>
+          VISION
+        </h1>
         <div className="row-mission">
           <div className="mission-card">
-            <h5 className="card-title" style={{ fontSize: "1.6rem" }}>
+            <h5
+              className="card-title"
+              style={{ fontSize: "1.6rem", marginLeft: "8rem" }}
+            >
               Our Vision
             </h5>
-            <p className="card-text" style={{ fontSize: "1.2rem" }}>
+            <p
+              className="card-text"
+              style={{ fontSize: "1.2rem", marginLeft: "8rem" }}
+            >
               <span ref={typedRef}></span>
             </p>
           </div>
@@ -60,7 +68,7 @@ const Vision = () => {
         <div
           className="mission-card-img"
           data-aos="fade-left"
-          style={{ display: "flex", flexWrap: "wrap", marginLeft: "10rem" }}
+          style={{ display: "flex", flexWrap: "wrap", marginLeft: "14rem" }}
         >
           {missionList.map((item) => (
             <div className="card" key={item.id} style={{ cursor: "pointer" }}>

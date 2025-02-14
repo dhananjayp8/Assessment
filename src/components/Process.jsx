@@ -2,6 +2,7 @@ import { FaLightbulb, FaLaptopCode, FaRocket } from "react-icons/fa";
 import { MdDesignServices } from "react-icons/md";
 import laptop from "../assets/lap.webp";
 import backg from "../assets/back.jpg";
+import tech from "../assets/technology.jpg";
 const Process = () => {
   const containerStyle = {
     display: "flex",
@@ -42,19 +43,23 @@ const Process = () => {
         textAlign: "center",
         padding: "40px 20px",
         padding: "40px 20px",
-        backgroundImage: `url(${backg})`, // Replace with your image URL
+        backgroundImage: `url(${tech})`, // Replace with your image URL
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         color: "white",
       }}
     >
-      <h1 style={{ fontSize: "2rem", fontWeight: "700" }}>PROCESS WE FOLLOW</h1>
+      <h1 style={{ fontSize: "2rem", fontWeight: "700", color: "white" }}>
+        PROCESS WE FOLLOW
+      </h1>
       <div style={containerStyle}>
         {/* Step 1 */}
         <div style={stepStyle} className="step">
           <FaLightbulb style={iconStyle} />
-          <h3 style={{ fontSize: "1.2rem", fontWeight: "700" }}>
+          <h3
+            style={{ fontSize: "1.2rem", fontWeight: "700", color: "#3674b5" }}
+          >
             Consultation
           </h3>
           <p>
@@ -68,7 +73,9 @@ const Process = () => {
         {/* Step 2 */}
         <div style={stepStyle} className="step">
           <MdDesignServices style={iconStyle} />
-          <h3 style={{ fontSize: "1.2rem", fontWeight: "700" }}>
+          <h3
+            style={{ fontSize: "1.2rem", fontWeight: "700", color: "#3674b5" }}
+          >
             Planning & Strategy
           </h3>
           <p>
@@ -82,7 +89,9 @@ const Process = () => {
         {/* Step 3 */}
         <div style={stepStyle} className="step">
           <FaLaptopCode style={iconStyle} />
-          <h3 style={{ fontSize: "1.2rem", fontWeight: "700" }}>
+          <h3
+            style={{ fontSize: "1.2rem", fontWeight: "700", color: "#3674b5" }}
+          >
             Design & Development (Traditional SDLC And Agile)
           </h3>
           <p>
@@ -96,7 +105,9 @@ const Process = () => {
         {/* Step 4 */}
         <div style={stepStyle} className="step">
           <FaRocket style={iconStyle} />
-          <h3 style={{ fontSize: "1.2rem", fontWeight: "700" }}>
+          <h3
+            style={{ fontSize: "1.2rem", fontWeight: "700", color: "#3674b5" }}
+          >
             Testing & Deployment
           </h3>
           <p>

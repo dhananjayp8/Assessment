@@ -2,7 +2,7 @@ import { FiMail } from "react-icons/fi";
 import { VscSymbolProperty } from "react-icons/vsc";
 import { MdSecurity, MdOutlineInsights } from "react-icons/md";
 import { SiAlwaysdata } from "react-icons/si";
-
+import foot from "../assets/foot.jpg";
 const Footer = () => {
   const footerContainerStyle = {
     display: "flex",
@@ -25,7 +25,9 @@ const Footer = () => {
     background: "#f5f5f5",
     padding: "15px",
     borderRadius: "8px",
+    backgroundColor: "rgba(255, 255, 255, 0.2)",
     boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
+    cursor: "pointer",
   };
 
   const iconStyle = {
@@ -36,6 +38,8 @@ const Footer = () => {
 
   const textStyle = {
     margin: 0,
+    color: "white",
+    fontWeight: "800",
   };
 
   const rightFooterStyle = {
@@ -44,6 +48,10 @@ const Footer = () => {
     alignItems: "center", // Centers content
     gap: "10px",
     marginRight: "1rem",
+    backgroundColor: "rgba(255, 255, 255, 0.2)", // Slightly white with transparency
+    padding: "15px",
+    borderRadius: "10px",
+    marginTop: "1.5rem",
   };
 
   const linkStyle = {
@@ -58,7 +66,19 @@ const Footer = () => {
   };
 
   return (
-    <div className="footer">
+    <div
+      className="footer"
+      style={{
+        textAlign: "center",
+        padding: "40px 20px",
+        padding: "40px 20px",
+        backgroundImage: `url(${foot})`, // Replace with your image URL
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        color: "white",
+      }}
+    >
       <h1 style={{ fontSize: "2rem", fontWeight: "800", marginLeft: "9rem" }}>
         How can we Help
       </h1>
@@ -116,7 +136,12 @@ const Footer = () => {
         {/* Right Section - Links */}
         <div style={rightFooterStyle}>
           <h1
-            style={{ fontSize: "1.2rem", fontWeight: "800", marginTop: "1rem" }}
+            style={{
+              fontSize: "1.2rem",
+              fontWeight: "800",
+              marginTop: "1rem",
+              color: "white",
+            }}
           >
             CONTACT US
           </h1>

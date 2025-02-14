@@ -13,7 +13,8 @@ import { VscAzure } from "react-icons/vsc";
 import { GrOracle } from "react-icons/gr";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import footer from "../assets/footer.jpg";
+import offer from "../assets/offer.jpeg";
 // Salesforce ?
 // AWS
 // Azure
@@ -62,6 +63,7 @@ const Offerings = () => {
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
+    arrows: false,
     autoplaySpeed: 1000,
     cssEase: "linear",
     pauseOnHover: false,
@@ -100,7 +102,16 @@ const Offerings = () => {
     <>
       <div
         className="slide-main-container"
-        // style={{ backgroundColor: "lightgrey" }}
+        style={{
+          textAlign: "center",
+          padding: "40px 20px",
+          padding: "40px 20px",
+          backgroundImage: `url(${offer})`, // Replace with your image URL
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          color: "white",
+        }}
       >
         <h1
           style={{
@@ -110,10 +121,10 @@ const Offerings = () => {
             color: "#3674b5",
           }}
         >
-          Our Offerings
+          OUR OFFERINGS
         </h1>
         <div className="slider-container">
-          <h1>Technologies</h1>
+          <h1 style={{ color: "white" }}>Technologies</h1>
           <div
             className="slider"
             style={{ width: "80%", margin: "auto", textAlign: "center" }}
@@ -145,6 +156,7 @@ const Offerings = () => {
                     textAlign: "center",
                     fontSize: "1.5rem",
                     fontWeight: "700",
+                    color: "white",
                   }}
                 >
                   SERVICES
@@ -163,6 +175,7 @@ const Offerings = () => {
                       listStyle: "none",
                       padding: "0",
                       textAlign: "center",
+                      color: "white",
                     }}
                   >
                     <li>IT consulting</li>
@@ -192,6 +205,7 @@ const Offerings = () => {
                     textAlign: "center",
                     fontSize: "1.5rem",
                     fontWeight: "700",
+                    color: "white",
                   }}
                 >
                   SOLUTIONS
@@ -201,7 +215,9 @@ const Offerings = () => {
                     display: "flex",
                     justifyContent: "center",
                     gap: "50px",
+                    cursor: "pointer",
                   }}
+                  className="list-cont"
                 >
                   {/* Left Column */}
                   <ul
