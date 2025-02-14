@@ -1,6 +1,7 @@
 import { FaLightbulb, FaLaptopCode, FaRocket } from "react-icons/fa";
 import { MdDesignServices } from "react-icons/md";
-
+import laptop from "../assets/lap.webp";
+import backg from "../assets/back.jpg";
 const Process = () => {
   const containerStyle = {
     display: "flex",
@@ -41,11 +42,10 @@ const Process = () => {
         textAlign: "center",
         padding: "40px 20px",
         padding: "40px 20px",
-        // backgroundImage:
-        //   "url('../assets/')", // Replace with your image URL
-        // backgroundSize: "cover",
-        // backgroundPosition: "center",
-        // backgroundRepeat: "no-repeat",
+        backgroundImage: `url(${backg})`, // Replace with your image URL
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
         color: "white",
       }}
     >
