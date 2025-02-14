@@ -323,6 +323,10 @@ ul > li:hover {
 .footer-card {
   background-color: #fb8f2f;
 }
+.head-footer {
+  font-size: 1.1rem;
+  font-weight: 800;
+}
 @keyframes moveToFro {
   0% {
     transform: translateX(0);
@@ -365,6 +369,53 @@ ul > li:hover {
     margin-top: 0;
   }
 }
+.card {
+  width: 18rem;
+  height: 20rem;
+  border: 1px solid black;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card:hover .card-img-top {
+  opacity: 0.3; /* Image fades */
+}
+
+.card:hover .card-overlay {
+  opacity: 1; /* Title appears */
+}
+
 @media (max-width: 768px) {
   .logo img {
     width: 6rem;
@@ -427,7 +478,9 @@ ul > li:hover {
     margin-left: 6rem;
   }
   .chip {
-    width: 130px;
+    width: 120px;
+    font-size: 0.5rem;
+    cursor: pointer;
   }
   .last-service {
     width: 500px;

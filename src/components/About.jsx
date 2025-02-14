@@ -41,7 +41,7 @@ const About = () => {
               style={{
                 fontSize: "3.5rem",
                 fontWeight: "900",
-                color: "#0BBF53",
+                color: "#3674b5",
               }}
             >
               PhronesisTech

@@ -3,7 +3,10 @@ import React from "react";
 const KnowMore = () => {
   return (
     <>
-      <div className="know-more">
+      <div
+        className="know-more"
+        style={{ borderBottom: "1px solid black", padding: "1rem 0" }}
+      >
         <h1
           style={{
             textAlign: "center",
@@ -28,12 +31,15 @@ const KnowMore = () => {
                 <h1>GET TO KNOW US</h1>
               </div>
             </div>
-            <div className="right-about">
+            <div
+              className="right-about"
+              style={{ borderTop: "1px solid black" }}
+            >
               <p>
                 <span
                   style={{
                     fontSize: "1.5rem",
-                    color: "#0BBF53",
+                    color: "#3674b5",
                     fontWeight: 700,
                   }}
                 >

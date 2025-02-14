@@ -59,13 +59,17 @@ const Footer = () => {
 
   return (
     <div className="footer">
+      <h1 style={{ fontSize: "2rem", fontWeight: "800", marginLeft: "9rem" }}>
+        How can we Help
+      </h1>
       <div style={footerContainerStyle}>
-        {/* Left Section - Cards */}
         <div style={leftFooterStyle}>
           <div style={footCardStyle} className="footer-card">
             <VscSymbolProperty style={iconStyle} />
             <div>
-              <h1 style={textStyle}>OPERATIONAL EFFICIENCY</h1>
+              <h1 style={textStyle} className="head-footer">
+                OPERATIONAL EFFICIENCY
+              </h1>
               <p style={textStyle}>
                 Customized approaches to find the balance of growth, efficiency,
                 and innovation, maximizing organizational outcomes.
@@ -75,7 +79,9 @@ const Footer = () => {
           <div style={footCardStyle} className="footer-card">
             <MdSecurity style={iconStyle} />
             <div>
-              <h1 style={textStyle}>SECURITY & COMPLIANCE</h1>
+              <h1 style={textStyle} className="head-footer">
+                SECURITY & COMPLIANCE
+              </h1>
               <p style={textStyle}>
                 Robust security measures ensuring regulatory compliance and data
                 protection.
@@ -85,7 +91,9 @@ const Footer = () => {
           <div style={footCardStyle} className="footer-card">
             <SiAlwaysdata style={iconStyle} />
             <div>
-              <h1 style={textStyle}>DATA ANALYTICS</h1>
+              <h1 style={textStyle} className="head-footer">
+                DATA ANALYTICS
+              </h1>
               <p style={textStyle}>
                 Turning raw data into actionable insights for business growth.
               </p>
@@ -94,7 +102,9 @@ const Footer = () => {
           <div style={footCardStyle} className="footer-card">
             <MdOutlineInsights style={iconStyle} />
             <div>
-              <h1 style={textStyle}>BUSINESS INTELLIGENCE</h1>
+              <h1 style={textStyle} className="head-footer">
+                BUSINESS INTELLIGENCE
+              </h1>
               <p style={textStyle}>
                 Empowering decision-making with advanced analytics and insights.
               </p>
@@ -104,8 +114,12 @@ const Footer = () => {
         {/* SALES@PHRONESISTECH.IO */}
         {/*  CRM@PHRONESISTECH.IO*/}
         {/* Right Section - Links */}
-        <div style={rightFooterStyle} className="footer-card">
-          <h1>CONTACT US</h1>
+        <div style={rightFooterStyle}>
+          <h1
+            style={{ fontSize: "1.2rem", fontWeight: "800", marginTop: "1rem" }}
+          >
+            CONTACT US
+          </h1>
           <div style={linkContainerStyle}>
             <a
               href="mailto:contact@phronesistech.com"

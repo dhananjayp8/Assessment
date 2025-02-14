@@ -13,6 +13,7 @@ import Process from "./components/Process";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import Vision from "./components/Vision";
 const App = () => {
   useEffect(() => {
     Aos.init();
@@ -26,6 +27,7 @@ const App = () => {
       <Process />
       <Industries />
       <Mission />
+      <Vision />
       <Services />
       <KnowMore />
       <Footer />

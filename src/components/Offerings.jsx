@@ -100,7 +100,7 @@ const Offerings = () => {
     <>
       <div
         className="slide-main-container"
-        style={{ backgroundColor: "lightgrey" }}
+        // style={{ backgroundColor: "lightgrey" }}
       >
         <h1
           style={{

@@ -22,21 +22,6 @@ const Mission = () => {
       img: "https://cdn.prod.website-files.com/60e3caa50ec2a701bbf83598/6371b8fd63d653650f8ffa70_Blog%20cover%20photos-50-min.jpg",
       title: "Continous Improvent",
     },
-    {
-      id: 4,
-      img: "https://cdn.prod.website-files.com/60e3caa50ec2a701bbf83598/6371b8fd63d653650f8ffa70_Blog%20cover%20photos-50-min.jpg",
-      title: "Continous Improvent",
-    },
-    {
-      id: 5,
-      img: "https://cdn.prod.website-files.com/60e3caa50ec2a701bbf83598/6371b8fd63d653650f8ffa70_Blog%20cover%20photos-50-min.jpg",
-      title: "Continous Improvent",
-    },
-    {
-      id: 6,
-      img: "https://cdn.prod.website-files.com/60e3caa50ec2a701bbf83598/6371b8fd63d653650f8ffa70_Blog%20cover%20photos-50-min.jpg",
-      title: "Continous Improvent",
-    },
   ];
   useEffect(() => {
     // Initialize AOS
@@ -44,7 +29,9 @@ const Mission = () => {
 
     // Initialize Typed.js
     const typed = new Typed(typedRef.current, {
-      strings: ["Empowering Businesses", "Driving Digital Transformation"],
+      strings: [
+        "is to empower businesses through innovative, reliable, and secure IT solutions that enhance operational efficiency and drive digital transformation.",
+      ],
       typeSpeed: 50,
       backSpeed: 30,
       loop: true,
@@ -70,12 +57,44 @@ const Mission = () => {
         </div>
 
         {/* Mission Cards */}
-        <div className="mission-card-img" data-aos="fade-left">
+        <div
+          className="mission-card-img"
+          data-aos="fade-left"
+          style={{ display: "flex", flexWrap: "wrap", marginLeft: "10rem" }}
+        >
           {missionList.map((item) => (
-            <div className="card" style={{ width: "18rem" }} key={item.id}>
-              <img src={item.img} className="card-img-top" alt="Card image" />
-              <div className="card-body">
-                <h5 className="card-title">{item.title}</h5>
+            // <div
+            //   className="card"
+            //   style={{
+            //     width: "18rem",
+            //     height: "20rem",
+            //     border: "1px solid black",
+            //   }}
+            //   key={item.id}
+            // >
+            //   <img
+            //     src={item.img}
+            //     className="card-img-top"
+            //     alt="Card image"
+            //     style={{ height: "85%", width: "100%" }}
+            //   />
+            //   <div className="card-body">
+            //     <h5
+            //       className="card-title"
+            //       style={{ marginLeft: "1rem", marginTop: "0.5rem" }}
+            //     >
+            //       {item.title}
+            //     </h5>
+            //   </div>
+            // </div>
+            <div className="card" key={item.id} style={{ cursor: "pointer" }}>
+              <div className="card-image-container">
+                <img src={item.img} className="card-img-top" alt="Card image" />
+                <div className="card-overlay">
+                  <h5 className="card-title" style={{ color: "white" }}>
+                    {item.title}
+                  </h5>
+                </div>
               </div>
             </div>
           ))}
