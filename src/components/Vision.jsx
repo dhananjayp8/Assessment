@@ -9,17 +9,17 @@ const Vision = () => {
   const missionList = [
     {
       id: 1,
-      img: "https://media.licdn.com/dms/image/v2/D4E12AQEMi9NaS5U06g/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1691958095088?e=2147483647&v=beta&t=1jdHvE2pgEVXrP12ph9jR8evEAkNgUQ3TbyUQ_dOq4s",
+      img: "https://www.simplilearn.com/ice9/free_resources_article_thumb/Technology_Trends.jpg",
       title: "Talent You Can Trust",
     },
     {
       id: 2,
-      img: "https://www.theglobalrecruiter.com/wp-content/uploads/2020/04/global-leader-e1587725129452.jpg",
+      img: "https://www.simplilearn.com/ice9/free_resources_article_thumb/What_is_the_Importance_of_Technology.jpg",
       title: "Delivering Exceptiona Results",
     },
     {
       id: 3,
-      img: "https://cdn.prod.website-files.com/60e3caa50ec2a701bbf83598/6371b8fd63d653650f8ffa70_Blog%20cover%20photos-50-min.jpg",
+      img: "https://softlinkglobal.com/wp-content/uploads/2021/11/Why-Technology-is-a-reliable-partner-in-your-journey-to-logistics-success.webp",
       title: "Build Reliability & Resilience",
     },
   ];

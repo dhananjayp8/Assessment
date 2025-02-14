@@ -47,7 +47,12 @@ const About = ({ scrollToKnowMore }) => {
               PhronesisTech
             </span>
           </p>
-          <button onClick={scrollToKnowMore}>Know More</button>
+          <button
+            style={{ backgroundColor: "#3674b5" }}
+            onClick={scrollToKnowMore}
+          >
+            Know More
+          </button>
         </div>
 
         {/* About Image - Animate from Right */}
