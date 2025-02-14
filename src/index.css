@@ -1,4 +1,6 @@
+@import "tailwindcss";
 * {
-  background-color: aliceblue;
+  /* background-color: #fff2f2; */
   color: black;
+  font-family: "Times New Roman", Times, serif;
 }
