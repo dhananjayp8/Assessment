@@ -53,7 +53,7 @@ const Vision = () => {
               className="card-title"
               style={{ fontSize: "1.6rem", marginLeft: "8rem" }}
             >
-              Our Vision
+              Our Vision :-
             </h5>
             <p
               className="card-text"

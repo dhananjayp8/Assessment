@@ -50,6 +50,7 @@ const About = ({ scrollToKnowMore }) => {
           <button
             style={{ backgroundColor: "#3674b5" }}
             onClick={scrollToKnowMore}
+            className="btn"
           >
             Know More
           </button>

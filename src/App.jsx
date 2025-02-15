@@ -8,12 +8,13 @@ import Navbar from "./components/Navbar";
 import Offerings from "./components/Offerings";
 import Services from "./components/Services";
 import Accordion from "./components/Accordion";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 import Process from "./components/Process";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useRef } from "react";
 import Vision from "./components/Vision";
+import Footer1 from "./components/Footer1";
 
 const App = () => {
   const aboutRef = useRef(null);
@@ -102,9 +103,9 @@ const App = () => {
       <div ref={knowMoreRef}>
         <KnowMore />
       </div>
-      <Process />
+      {/* <Process /> */}
       <div ref={contactRef}>
-        <Footer />
+        <Footer1 />
       </div>
     </>
   );

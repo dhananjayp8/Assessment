@@ -21,11 +21,11 @@
   color: #3674b5;
 }
 
-ul > li {
+/* ul > li {
   padding: 2rem;
   font-size: 1.2rem;
   font-weight: 800;
-}
+} */
 
 ul > li:hover {
   cursor: pointer;
@@ -140,7 +140,9 @@ ul > li:hover {
   font-weight: bold;
   /* color: #0056b3; */
 }
-
+.btn:hover {
+  background-color: #195ca4;
+}
 .about-text .highlight {
   font-size: 18px;
   font-weight: bold;
@@ -249,7 +251,6 @@ ul > li:hover {
   background: #f1f1f1;
 }
 
-/* Show dropdown on hover */
 .dropdown:hover .dropdown-content {
   opacity: 1;
   visibility: visible;
@@ -271,7 +272,7 @@ ul > li:hover {
   color: white;
   background-color: #fb8f2f;
   display: flex;
-  justify-content: center; /* Centers horizontally */
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   font-size: 0.7rem;
@@ -288,13 +289,7 @@ ul > li:hover {
 .chip span {
   color: white;
 }
-/* .chip span:hover {
-  color: #3674b5; 
-}
-*/
-/* .chip span:hover {
-  background-color: lightgray;
-} */
+
 .slider-container {
   margin-top: 2rem;
 }
@@ -332,7 +327,6 @@ ul > li:hover {
 
 .list-cont {
   opacity: 1;
-  /* visibility: hidden; */
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 .service-card {
@@ -345,9 +339,9 @@ ul > li:hover {
 }
 
 .service-card:hover {
-  transform: scale(1.01); /* Slight increase in size */
-  background-color: transparent; /* Dark background */
-  color: white; /* White text */
+  transform: scale(1.01);
+  background-color: transparent;
+  color: white;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -355,7 +349,7 @@ ul > li:hover {
   opacity: 1;
   visibility: visible;
 }
-/* animation: "moveToFro 2s infinite ease-in-out alternate", */
+
 .step {
   animation: moveToFro 2s infinite ease-in-out alternate;
 }
@@ -392,6 +386,79 @@ ul > li:hover {
 }
 .right-about p {
   font-size: 1.2rem;
+}
+
+.offer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.list {
+  text-align: center;
+  width: 100%;
+}
+
+.head-list {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.list-cont {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.social-links {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  padding: 0;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #3674b5;
+  padding: 1.5rem;
+}
+.footer h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1.3rem;
+  color: white;
+  text-align: left;
+}
+.footer ul > li {
+  color: white;
+  padding: 0.5rem;
+}
+.left-footer {
+  display: flex;
+  flex-direction: column;
+}
+.center-footer ul {
+  display: flex;
+}
+.right-footer ul {
+  display: flex;
+  flex-direction: column;
+}
+.social-links ul > li {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-links a {
+  font-size: 1.5rem;
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+  color: #0073b1;
 }
 @media (min-width: 768px) {
   .about-container {
@@ -435,7 +502,7 @@ ul > li:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+  background: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -448,14 +515,14 @@ ul > li:hover {
 }
 
 .card:hover .card-img-top {
-  opacity: 0.3; /* Image fades */
+  opacity: 0.3;
 }
 
 .card:hover .card-overlay {
-  opacity: 1; /* Title appears */
+  opacity: 1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .logo img {
     width: 6rem;
   }
@@ -463,7 +530,6 @@ ul > li:hover {
     position: relative;
   }
 
-  /* Hide the default nav links on small screens */
   .nav ul {
     display: none;
     flex-direction: column;
@@ -477,19 +543,16 @@ ul > li:hover {
     text-align: center;
   }
 
-  /* Show nav when active */
   .nav ul.open {
     display: flex;
   }
 
-  /* Adjust list items for mobile */
   .nav ul > li {
     padding: 1rem;
     width: 100%;
     border-bottom: 1px solid #ddd;
   }
 
-  /* Show hamburger icon only on small screens */
   .hamburger {
     display: block;
     cursor: pointer;
@@ -497,13 +560,12 @@ ul > li:hover {
     color: #3674b5;
     position: absolute;
     right: 20px;
-    top: 50px; /* Adjust upward */
+    top: 50px;
     z-index: 2000;
   }
 
-  /* Position close (✖) icon slightly upwards */
   .hamburger.close {
-    top: 5px; /* Moves close icon slightly upwards */
+    top: 5px;
   }
   .offer-container {
     margin-right: 18rem;
@@ -517,7 +579,7 @@ ul > li:hover {
     margin-left: 6rem;
   }
   .chip {
-    width: 120px;
+    width: 110px;
     font-size: 0.5rem;
     cursor: pointer;
   }
@@ -525,6 +587,33 @@ ul > li:hover {
     width: 500px;
   }
   .list {
-    width: 21rem;
+    width: 20rem;
+    margin-left: 8rem;
+  }
+  .head-list {
+    font-size: 1rem;
+  }
+
+  .list h1 {
+    font-size: 1.2rem;
+  }
+  .list-cont {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .list-cont ul li {
+    font-size: 1rem; /* Reduce font size on smaller screens */
+  }
+
+  .list h1 {
+    font-size: 1.2rem; /* Reduce heading size */
+  }
+  .mission h1 {
+    margin-right: 5rem;
+  }
+  .card-image-container {
+    margin-right: 5rem;
   }
 }

@@ -108,9 +108,11 @@ const Offerings = () => {
           padding: "40px 20px",
           backgroundImage: `url(${offer})`, // Replace with your image URL
           backgroundSize: "cover",
+          opacity: "0.8",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           color: "white",
+          zIndex: -1,
         }}
       >
         <h1
@@ -118,7 +120,8 @@ const Offerings = () => {
             fontSize: "3rem",
             fontWeight: "900",
             textAlign: "center",
-            color: "#3674b5",
+            // color: "#3674b5",
+            color: "white",
           }}
         >
           OUR OFFERINGS
@@ -127,7 +130,12 @@ const Offerings = () => {
           <h1 style={{ color: "white" }}>Technologies</h1>
           <div
             className="slider"
-            style={{ width: "80%", margin: "auto", textAlign: "center" }}
+            style={{
+              width: "80%",
+              margin: "auto",
+              textAlign: "center",
+              zIndex: 1,
+            }}
           >
             <Slider {...settings}>
               {icons.map((item) => (
@@ -158,6 +166,7 @@ const Offerings = () => {
                     fontWeight: "700",
                     color: "white",
                   }}
+                  className="head-list"
                 >
                   SERVICES
                 </h1>
@@ -207,6 +216,7 @@ const Offerings = () => {
                     fontWeight: "700",
                     color: "white",
                   }}
+                  className="head-list"
                 >
                   SOLUTIONS
                 </h1>
