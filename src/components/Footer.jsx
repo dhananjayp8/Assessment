@@ -79,11 +79,11 @@ const Footer = () => {
         color: "white",
       }}
     >
-      <h1 style={{ fontSize: "2rem", fontWeight: "800", marginLeft: "9rem" }}>
+      {/* <h1 style={{ fontSize: "2rem", fontWeight: "800", marginLeft: "9rem" }}>
         How can we Help
-      </h1>
+      </h1> */}
       <div style={footerContainerStyle}>
-        <div style={leftFooterStyle}>
+        {/* <div style={leftFooterStyle}>
           <div style={footCardStyle} className="footer-card">
             <VscSymbolProperty style={iconStyle} />
             <div>
@@ -130,10 +130,7 @@ const Footer = () => {
               </p>
             </div>
           </div>
-        </div>
-        {/* SALES@PHRONESISTECH.IO */}
-        {/*  CRM@PHRONESISTECH.IO*/}
-        {/* Right Section - Links */}
+        </div> */}
         <div style={rightFooterStyle}>
           <h1
             style={{

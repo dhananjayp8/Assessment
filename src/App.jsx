@@ -95,9 +95,9 @@ const App = () => {
       <div ref={visionRef}>
         <Vision />
       </div>
-      <div ref={servicesRef}>
+      {/* <div ref={servicesRef}>
         <Services />
-      </div>
+      </div> */}
 
       <div ref={knowMoreRef}>
         <KnowMore />
