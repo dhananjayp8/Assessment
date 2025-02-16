@@ -7,25 +7,7 @@ const KnowMore = () => {
         className="know-more"
         style={{ borderBottom: "1px solid black", padding: "1rem 0" }}
       >
-        <h1
-          style={{
-            textAlign: "center",
-            fontSize: "2rem",
-            fontWeight: "800",
-            marginBottom: "1rem",
-            color: "#3674b5",
-          }}
-        >
-          OUR VALUES
-        </h1>
         <div className="know-more-container">
-          <div className="chips">
-            <div className="chip">CREDIBILITY</div>
-            <div className="chip">COMPETENCE</div>
-            <div className="chip">COMMITMENT</div>
-            <div className="chip">CUSTOMER CENTRICITY</div>
-            <div className="chip">CONTINUOUS IMPROVEMENT</div>
-          </div>
           <div className="about-content">
             <div className="left-about">
               <div className="heading">

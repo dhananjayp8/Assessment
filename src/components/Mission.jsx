@@ -1,11 +1,8 @@
-import React from "react";
-import { useRef, useEffect } from "react";
-import Typed from "typed.js";
+import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const Mission = () => {
-  const typedRef = useRef(null);
+export default function Mission() {
   const missionList = [
     {
       id: 1,
@@ -20,71 +17,87 @@ const Mission = () => {
     {
       id: 3,
       img: "https://cdn.prod.website-files.com/60e3caa50ec2a701bbf83598/6371b8fd63d653650f8ffa70_Blog%20cover%20photos-50-min.jpg",
-      title: "Continous Improvent",
+      title: "Continuous Improvement",
     },
   ];
+
   useEffect(() => {
     AOS.init({ duration: 1000 });
-
-    const typed = new Typed(typedRef.current, {
-      strings: [
-        "To empower businesses through innovative, reliable, and secure IT solutions that enhance operational efficiency and drive digital transformation.",
-      ],
-      typeSpeed: 50,
-      backSpeed: 30,
-      loop: true,
-      backDelay: 1500,
-      startDelay: 500,
-    });
-
-    return () => typed.destroy();
   }, []);
+
   return (
-    <>
-      <div className="mission" data-aos="fade-left">
-        <h1
-          style={{ marginLeft: "12rem", fontWeight: "800", color: "#3674b5" }}
+    <div style={{ padding: "2rem" }}>
+      <h1
+        style={{
+          textAlign: "center",
+          fontWeight: "800",
+          color: "#3674b5",
+          fontSize: "2rem",
+          fontWeight: "800",
+          padding: "1rem",
+        }}
+      >
+        MISSION & VISION
+      </h1>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          gap: "2rem",
+          flexWrap: "wrap",
+          margin: "1rem",
+        }}
+      >
+        {/* Mission Box */}
+        <div
+          data-aos="fade-left"
+          style={{
+            flex: 1,
+            minWidth: "300px",
+            padding: "2rem",
+            border: "2px solid #3674b5",
+            borderRadius: "8px",
+            background: "white",
+          }}
         >
-          MISSION
-        </h1>
-        <div className="row-mission">
-          <div className="mission-card">
-            <h5
-              className="card-title"
-              style={{ fontSize: "1.5rem", marginLeft: "8rem" }}
-            >
-              Our Mission :-
-            </h5>
-            <p
-              className="card-text"
-              style={{ fontSize: "1.2rem", marginLeft: "8rem" }}
-            >
-              <span ref={typedRef}></span>
-            </p>
-          </div>
+          <h2
+            style={{ textAlign: "center", color: "#3674b5", fontWeight: "600" }}
+          >
+            MISSION
+          </h2>
+          <p style={{ fontSize: "1.2rem", textAlign: "center" }}>
+            To empower businesses through innovative, reliable, and secure IT
+            solutions that enhance operational efficiency and drive digital
+            transformation.
+          </p>
         </div>
 
+        {/* Vision Box */}
         <div
-          className="mission-card-img"
-          data-aos="fade-left"
-          style={{ display: "flex", flexWrap: "wrap", marginLeft: "14rem" }}
+          data-aos="fade-right"
+          style={{
+            flex: 1,
+            minWidth: "300px",
+            padding: "2rem",
+            border: "2px solid #3674b5",
+            borderRadius: "8px",
+            background: "white",
+          }}
         >
-          {missionList.map((item) => (
-            <div className="card" key={item.id} style={{ cursor: "pointer" }}>
-              <div className="card-image-container">
-                <img src={item.img} className="card-img-top" alt="Card image" />
-                <div className="card-overlay">
-                  <h5 className="card-title" style={{ color: "white" }}>
-                    {item.title}
-                  </h5>
-                </div>
-              </div>
-            </div>
-          ))}
+          <h2
+            style={{ textAlign: "center", color: "#3674b5", fontWeight: "600" }}
+          >
+            VISION
+          </h2>
+          <p style={{ fontSize: "1.2rem", textAlign: "center" }}>
+            To be the leading provider of exceptional service solutions,
+            recognized for our commitment to excellence, innovation, and
+            customer satisfaction.
+          </p>
         </div>
       </div>
-    </>
-  );
-};
 
-export default Mission;
+      {/* Mission List */}
+    </div>
+  );
+}

@@ -15,6 +15,8 @@ import "aos/dist/aos.css";
 import { useEffect, useRef } from "react";
 import Vision from "./components/Vision";
 import Footer1 from "./components/Footer1";
+import Enquire from "./components/Enquire";
+import Values from "./components/Values";
 
 const App = () => {
   const aboutRef = useRef(null);
@@ -87,15 +89,16 @@ const App = () => {
         <About scrollToKnowMore={scrollToKnowMore} />
       </div>
 
+      <Values />
       <div ref={offeringsRef}>
         <Offerings />
       </div>
       <div ref={missionRef}>
         <Mission />
       </div>
-      <div ref={visionRef}>
+      {/* <div ref={visionRef}>
         <Vision />
-      </div>
+      </div> */}
       {/* <div ref={servicesRef}>
         <Services />
       </div> */}
@@ -103,6 +106,7 @@ const App = () => {
       <div ref={knowMoreRef}>
         <KnowMore />
       </div>
+      <Enquire />
       {/* <Process /> */}
       <div ref={contactRef}>
         <Footer1 />

@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
   padding: 1rem;
   border-bottom: 1px solid black;
 }
@@ -19,16 +19,42 @@
 
 .nav ul > li {
   color: #3674b5;
+  font-size: 1rem;
 }
-
-/* ul > li {
-  padding: 2rem;
-  font-size: 1.2rem;
-  font-weight: 800;
-} */
 
 ul > li:hover {
   cursor: pointer;
+} */
+.navbar {
+  padding: 1rem;
+  border-bottom: 1px solid black;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Ensures vertical alignment */
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 1rem;
+  position: relative;
+}
+
+.nav ul {
+  width: auto; /* Prevents unnecessary width restriction */
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.nav ul > li {
+  color: #3674b5;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 .logo {
@@ -37,7 +63,6 @@ ul > li:hover {
 }
 
 .logo > img {
-  /* background-color: aliceblue; */
   padding: 10px;
   border-radius: 8px;
 }
@@ -427,13 +452,14 @@ ul > li:hover {
 .footer h2 {
   font-size: 1.2rem;
   font-weight: 600;
-  margin-bottom: 1.3rem;
+  margin-bottom: 1.2rem;
   color: white;
   text-align: left;
 }
 .footer ul > li {
   color: white;
   padding: 0.5rem;
+  font-weight: 400;
 }
 .left-footer {
   display: flex;
@@ -522,11 +548,34 @@ ul > li:hover {
   opacity: 1;
 }
 
+.form-enquire {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 2rem;
+  width: 80%;
+  margin: 2rem auto;
+}
+input {
+  border: 1px solid black;
+  padding: 0.7rem;
+  border-radius: 10px;
+  width: 20rem;
+}
+.name-data {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+}
+.subject {
+  width: 100%;
+}
 @media (max-width: 600px) {
   .logo img {
     width: 6rem;
   }
-  .nav {
+  /* .nav {
     position: relative;
   }
 
@@ -541,6 +590,45 @@ ul > li:hover {
     border-top: 1px solid black;
     z-index: 1000;
     text-align: center;
+  }
+
+  .nav ul.open {
+    display: flex;
+  }
+
+  .nav ul > li {
+    padding: 1rem;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #3674b5;
+    position: absolute;
+    right: 20px;
+    top: 50px;
+    z-index: 2000;
+  } */
+  .nav {
+    position: relative; /* Ensures absolute positioning inside */
+  }
+
+  .nav ul {
+    display: none; /* Keeps menu hidden initially */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: white;
+    border-top: 1px solid black;
+    z-index: 1000;
+    text-align: center;
+    transform: none; /* Removes previous centering */
+    left: 0; /* Aligns menu to the left for mobile */
   }
 
   .nav ul.open {
@@ -615,5 +703,12 @@ ul > li:hover {
   }
   .card-image-container {
     margin-right: 5rem;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer ul {
+    margin-bottom: 2rem;
   }
 }

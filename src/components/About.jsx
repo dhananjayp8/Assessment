@@ -44,7 +44,7 @@ const About = ({ scrollToKnowMore }) => {
                 color: "#3674b5",
               }}
             >
-              PhroenesisTech
+              PhronesisTech
             </span>
           </p>
           <button

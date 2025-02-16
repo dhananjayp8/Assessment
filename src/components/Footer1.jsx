@@ -64,6 +64,21 @@ const Footer1 = () => {
           </ul>
         </div>
       </div>
+      <div
+        className="last-footer"
+        style={{
+          textAlign: "center",
+          color: "white",
+          fontSize: "1rem",
+          fontWeight: "700",
+          backgroundColor: "#0755aa",
+          padding: "2rem",
+        }}
+      >
+        <h3 style={{ color: "white" }}>
+          &copy; PhronesisTech. All Rights reserved.
+        </h3>
+      </div>
     </>
   );
 };

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 // Icons for menu
 import { FiMenu, FiX } from "react-icons/fi";
-import logo from "../assets/Logo.png"; // Replace with your actual logo path
+import logo from "../assets/logo-icon.jpg"; // Replace with your actual logo path
 import "../App.css"; // Import the CSS file
 
 const Navbar = ({ scrollToSection }) => {
