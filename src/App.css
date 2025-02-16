@@ -232,14 +232,63 @@ ul > li:hover {
   width: 200px;
   height: 200px;
 }
-.offer-container {
+/* .offer-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
 }
 .offer-container .list {
   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
+} */
+.offerings-container {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+}
+
+.offerings-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.offerings-section {
+  flex: 1;
+  min-width: 300px;
+}
+
+.sub-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.offerings-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 350px;
+}
+
+.offerings-item {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
 .service-container {
   display: flex;
 }

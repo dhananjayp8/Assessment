@@ -26,7 +26,9 @@ export default function Mission() {
   }, []);
 
   return (
-    <div style={{ padding: "2rem" }}>
+    <div
+      style={{ padding: "2rem", boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
+    >
       <h1
         style={{
           textAlign: "center",

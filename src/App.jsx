@@ -17,6 +17,7 @@ import Vision from "./components/Vision";
 import Footer1 from "./components/Footer1";
 import Enquire from "./components/Enquire";
 import Values from "./components/Values";
+import Tech from "./components/Tech";
 
 const App = () => {
   const aboutRef = useRef(null);
@@ -93,6 +94,7 @@ const App = () => {
       <div ref={offeringsRef}>
         <Offerings />
       </div>
+      <Tech />
       <div ref={missionRef}>
         <Mission />
       </div>
