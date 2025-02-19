@@ -38,9 +38,7 @@ export default function Mission() {
           fontWeight: "800",
           padding: "1rem",
         }}
-      >
-        MISSION & VISION
-      </h1>
+      ></h1>
       <div
         style={{
           display: "flex",

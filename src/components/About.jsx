@@ -66,15 +66,133 @@
 // };
 
 // export default About;
+// import Lottie from "lottie-react";
+// import Typed from "typed.js";
+// import AOS from "aos";
+// import { useRef, useEffect } from "react";
+// import "aos/dist/aos.css";
+// import animationData from "../assets/animationData.json"; // Replace with your Lottie JSON file
+// import about from "../assets/aboutImage.webp";
+// const About = ({ scrollToKnowMore }) => {
+//   const typedRef = useRef(null);
+
+//   useEffect(() => {
+//     const typed = new Typed(typedRef.current, {
+//       strings: ["Start your journey with"],
+//       typeSpeed: 50,
+//       backSpeed: 30,
+//       loop: true,
+//       backDelay: 1500,
+//       startDelay: 500,
+//     });
+
+//     return () => typed.destroy(); // Cleanup on unmount
+//   }, []);
+
+//   useEffect(() => {
+//     AOS.init({
+//       duration: 1000, // Animation duration
+//       easing: "ease-in-out", // Easing option
+//       once: false, // Whether animation should happen only once
+//     });
+//   }, []);
+
+//   return (
+//     <section
+//       className="about-section"
+//       style={{
+//         padding: "4rem 0",
+//         backgroundImage: `url(${about})`, // Add your image URL here
+//         backgroundSize: "cover", // Make the image cover the entire div
+//         backgroundPosition: "center", // Center the background image
+//         backgroundRepeat: "no-repeat",
+//         position: "relative",
+//         overflow: "visible",
+//         zIndex: 1,
+//       }}
+//     >
+//       <div
+//         className="about-container"
+//         style={{
+//           display: "flex",
+//           alignItems: "center",
+//           justifyContent: "space-between",
+//           maxWidth: "1200px",
+//           margin: "0 auto",
+//           flexWrap: "wrap",
+//         }}
+//       >
+//         {/* About Text - Animate from Left */}
+//         <div
+//           className="about-text"
+//           data-aos="fade-left"
+//           style={{
+//             width: "35%",
+//             textAlign: "left",
+//           }}
+//         >
+//           <p style={{ fontSize: "2rem", fontWeight: "600" }}>
+//             <span ref={typedRef}></span>{" "}
+//             <span style={{ color: "#0BBF53" }}></span> <br />
+//             <span
+//               style={{
+//                 fontSize: "3.5rem",
+//                 fontWeight: "900",
+//                 color: "#3674b5",
+//               }}
+//               className="company-name"
+//             >
+//               PhronesisTech
+//             </span>
+//           </p>
+//           <button
+//             style={{
+//               backgroundColor: "#3674b5",
+//               color: "white",
+//               padding: "10px 20px",
+//               fontSize: "1rem",
+//               border: "none",
+//               borderRadius: "8px",
+//               cursor: "pointer",
+//               marginTop: "10px",
+//             }}
+//             onClick={scrollToKnowMore}
+//             className="btn"
+//           >
+//             Know More
+//           </button>
+//         </div>
+
+//         {/* Lottie Animation - Animate from Right */}
+//         <div
+//           className="about-animation"
+//           data-aos="fade-right"
+//           style={{
+//             width: "60%",
+//             display: "flex",
+//             justifyContent: "center",
+//             zIndex: "-1",
+//           }}
+//         >
+//           <Lottie animationData={animationData} loop={true} />
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default About;
 import Lottie from "lottie-react";
 import Typed from "typed.js";
 import AOS from "aos";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import "aos/dist/aos.css";
-import animationData from "../assets/animationData.json"; // Replace with your Lottie JSON file
+import animationData from "../assets/animationData.json";
+import about from "../assets/aboutImage.webp";
 
-const About = ({ scrollToKnowMore }) => {
+const About = ({ scrollToKnowMore, showLottie }) => {
   const typedRef = useRef(null);
+  //const [showLottie, setShowLottie] = useState(true);
 
   useEffect(() => {
     const typed = new Typed(typedRef.current, {
@@ -86,19 +204,31 @@ const About = ({ scrollToKnowMore }) => {
       startDelay: 500,
     });
 
-    return () => typed.destroy(); // Cleanup on unmount
+    return () => typed.destroy();
   }, []);
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration
-      easing: "ease-in-out", // Easing option
-      once: false, // Whether animation should happen only once
+      duration: 1000,
+      easing: "ease-in-out",
+      once: false,
     });
   }, []);
 
   return (
-    <section className="about-section" style={{ padding: "4rem 0" }}>
+    <section
+      className="about-section"
+      style={{
+        padding: "4rem 0",
+        backgroundImage: `url(${about})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        position: "relative",
+        overflow: "visible",
+        zIndex: 0,
+      }}
+    >
       <div
         className="about-container"
         style={{
@@ -110,7 +240,6 @@ const About = ({ scrollToKnowMore }) => {
           flexWrap: "wrap",
         }}
       >
-        {/* About Text - Animate from Left */}
         <div
           className="about-text"
           data-aos="fade-left"
@@ -120,7 +249,7 @@ const About = ({ scrollToKnowMore }) => {
           }}
         >
           <p style={{ fontSize: "2rem", fontWeight: "600" }}>
-            <span ref={typedRef}></span>{" "}
+            <span ref={typedRef}></span>
             <span style={{ color: "#0BBF53" }}></span> <br />
             <span
               style={{
@@ -128,6 +257,7 @@ const About = ({ scrollToKnowMore }) => {
                 fontWeight: "900",
                 color: "#3674b5",
               }}
+              className="company-name"
             >
               PhronesisTech
             </span>
@@ -150,18 +280,20 @@ const About = ({ scrollToKnowMore }) => {
           </button>
         </div>
 
-        {/* Lottie Animation - Animate from Right */}
-        <div
-          className="about-animation"
-          data-aos="fade-right"
-          style={{
-            width: "60%",
-            display: "flex",
-            justifyContent: "center",
-          }}
-        >
-          <Lottie animationData={animationData} loop={true} />
-        </div>
+        {showLottie && (
+          <div
+            className="about-animation"
+            data-aos="fade-right"
+            style={{
+              width: "60%",
+              display: "flex",
+              justifyContent: "center",
+              zIndex: "-1",
+            }}
+          >
+            <Lottie animationData={animationData} loop={true} />
+          </div>
+        )}
       </div>
     </section>
   );

@@ -1,13 +1,15 @@
 import React from "react";
 import Slider from "react-slick";
+import { LiaSalesforce } from "react-icons/lia";
 import {
   FaJava,
   FaPython,
-  FaSalesforce,
+  //   FaSalesforce,
   FaAws,
   FaAtlassian,
   FaGithub,
 } from "react-icons/fa";
+import offer from "../assets/offer.jpeg";
 import { SiDotnet, SiTalend } from "react-icons/si";
 import { VscAzure } from "react-icons/vsc";
 import { GrOracle } from "react-icons/gr";
@@ -48,7 +50,7 @@ const PowerBiIcon = () => (
 );
 
 const icons = [
-  { id: 1, icon: <FaSalesforce /> },
+  { id: 1, icon: <LiaSalesforce /> },
   { id: 2, icon: <FaAws /> },
   { id: 3, icon: <VscAzure /> },
   { id: 4, icon: <SiDotnet /> },
@@ -80,6 +82,10 @@ const Tech = () => {
       className="slider-container"
       style={{
         boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+        marginTop: "2rem",
+        marginBottom: "2rem",
+        padding: "2rem",
+        // Ensure the image doesn't repeat
       }}
     >
       <h1 style={{ color: "#3674b5", fontSize: "2.2rem", fontWeight: "900" }}>

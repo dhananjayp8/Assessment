@@ -138,16 +138,21 @@
 // export default KnowMore;
 import React from "react";
 import Lottie from "lottie-react";
-import knowData from "../assets/know.json"; // Replace with your actual Lottie JSON file
-
+import knowData from "../assets/phronesis.json"; // Replace with your actual Lottie JSON file
+import about from "../assets/aboutImage.webp";
+import temp from "../assets/temp1.jpg";
 const KnowMore = () => {
   return (
     <div
       className="know-more"
       style={{
         boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
-        // borderBottom: "1px solid black",
-        padding: "2rem 0", // 🔹 Added spacing
+
+        padding: "2rem 0",
+        backgroundImage: `url(${about})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
     >
       <h1
@@ -167,20 +172,20 @@ const KnowMore = () => {
           flexWrap: "wrap",
           justifyContent: "center",
           alignItems: "center",
-          gap: "50px", // 🔹 Space between animation & text
+          gap: "50px",
           maxWidth: "1000px",
           margin: "0 auto",
         }}
       >
-        {/* Lottie Animation (Left Side) */}
         <div
           className="animation-container"
           style={{
             width: "45%",
             minWidth: "320px",
+            height: "500px",
             display: "flex",
             justifyContent: "center",
-            padding: "20px", // 🔹 Padding for balance
+            padding: "20px",
           }}
         >
           <Lottie
@@ -190,14 +195,12 @@ const KnowMore = () => {
           />
         </div>
 
-        {/* Right Content (Text Content) */}
         <div
           className="right-about"
           style={{
-            // borderTop: "1px solid black",
             width: "50%",
             minWidth: "320px",
-            padding: "20px", // 🔹 More padding for readability
+            padding: "20px",
           }}
         >
           <p>

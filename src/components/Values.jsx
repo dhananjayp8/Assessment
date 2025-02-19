@@ -17,6 +17,7 @@ const Values = () => {
       <div
         style={{
           padding: "2rem",
+          margin: "2rem",
         }}
       >
         <h1

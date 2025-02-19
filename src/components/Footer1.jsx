@@ -1,6 +1,9 @@
 import React from "react";
 import { FaFacebookSquare } from "react-icons/fa";
-import { FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
+// import { FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
+//import { CiFacebook } from "react-icons/ci";
+// import { FaFacebook } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 const Footer1 = () => {
   return (
     <>
@@ -24,7 +27,15 @@ const Footer1 = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaFacebook />
+                <FaFacebookF
+                  size={30}
+                  color="white"
+                  style={{
+                    backgroundColor: "#3b5998",
+                    padding: "5px",
+                    borderRadius: "50%",
+                  }}
+                />
               </a>
             </li>
             <li>
@@ -42,7 +53,7 @@ const Footer1 = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaLinkedin />
+                <FaLinkedinIn />
               </a>
             </li>
           </ul>

@@ -305,7 +305,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Lottie from "lottie-react";
-import connectData from "../assets/connect.json"; // Replace with your Lottie JSON file
+import connectData from "../assets/contact.json"; // Replace with your Lottie JSON file
 
 const ContactForm = () => {
   const formRef = useRef();
@@ -358,6 +358,7 @@ const ContactForm = () => {
           maxWidth: "1000px",
           margin: "0 auto",
         }}
+        className="enquire"
       >
         {/* Lottie Animation - Takes left side on large screens */}
         <div
